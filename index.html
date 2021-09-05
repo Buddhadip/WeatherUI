@@ -1,0 +1,145 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bba1b57bfc.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>Weather UI</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <div class="section-1">
+                    <div class="icon">
+                        <i class="fas fa-cloud fa-2x" aria-hidden="true"></i><span class="aora"><b> aora</b></span></i>
+                    </div>
+                    <div class="aora">
+                        <i class="fab fa-elementor fa-xs" aria-hidden="true"></i>    
+                        <button class="section-1-button">Dashboard</button>
+                    </div>    
+                        <br>
+                    <div class="aora">
+                        <i class="fas fa-map-marker-alt fa-xs" aria-hidden="true"></i>
+                        <button class="section-1-button">Location</button>
+                    </div>    
+                        <br>
+                    <div class="aora">    
+                        <i class="fas fa-map-marked-alt fa-xs" aria-hidden="true"></i>
+                        <button class="section-1-button">Map</button>
+                    </div>    
+                        <br>
+                    <div class="aora">    
+                        <i class="fas fa-cog fa-xs" aria-hidden="true"></i>
+                        <button class="section-1-button">Settings</button>
+                    </div>    
+                    <div class="aora log-out">
+                        <i class="fas fa-sign-out-alt fa-xs" aria-hidden="true"></i>
+                        <button class="section-1-button">Log Out</button>
+                    </div>
+                </div>      
+            </div>
+            <div class="col-5">
+                
+                <div class="section-2">
+                    
+                    <p id="textsection2" class="text2">Today's Highlights</p>
+                    <button id="menu"><i class="fa fa-ellipsis-h  text-2" aria-hidden="true"></i></button>
+                        
+                    <div class="section-2-item">
+                        <p><b>UV  Index</b></p>
+                        <img src="/WeatherUI/uvindex.png" alt="UV INDEX IS 5" id="uv_index">
+                    </div>
+                    <div class="section-2-item">
+                        <p><b>Sunrise & Sunset</b></p>
+                        <i class="fa fa-arrow-circle-up fa-2x  box2" aria-hidden="true"></i><span class="box2-text">5:39 AM</span>
+                        <p class="sub-sunrise">-1m 46s</p>
+                        
+                        <i class="fa fa-arrow-circle-down fa-2x  box2" aria-hidden="true"></i><span class="box2-text">8:24 PM</span>
+                        <p class="sub-sunrise">+2m 22s</p>
+                    </div>
+            
+                    <div class="section-2-item">
+                        <p><b>Wind Status</b></p>
+                        <p id="wind">16 <span id="metric">km/h</span></p>
+                        <p id="sub-visibility">WSW</p>
+                    </div>
+                    <div class="section-2-item">
+                        <p><b>Visibility</b></p>
+                        <p id="Visibility">12 km</p>
+                        
+                        <p id="sub-visibility">Average</p>
+                    </div>
+                    <div class="section-2-item">
+                        <p><b>Humidity</b></p>
+                        <p id="wind">40<span id="metric"> %</span></p>
+                        <p id="sub-visibility">Normal</p>
+                    </div>
+                    <div class="section-2-item">
+                        <p><b>Air Quality</b></p>
+                        <p id="wind">33</p>
+                        <p id="sub-visibility">Good</p>
+                    </div>
+                    
+                </div>  
+            </div>
+            <div class="col-4">
+                <div class="section-3">
+                    <i class="fa fa-bell bell-icon" aria-hidden="true"></i>
+                    <span id="username">Michael Garcia</span>
+                    <img src="/WeatherUI/profile.png" alt="user" height="30" width="30" style="border: radius 100%;">
+                    <div class="line2">
+                        <p><b><span id="city">The Hague,</span></b><button id="menu"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></button></p>
+                        <p id="country">Netherlands</p>
+                        <p id="date">Mon,19 Aug</p>
+                        
+                    </div>
+                    <div class="line-3">
+                        <h3>Today</h3>
+                    </div>
+                    <div class="line-4">
+                        <i class="fas fa-sun fa-3x" aria-hidden="true"></i><span id="temp">19<sup><sup><sup>o</sup><sub>C</sub></sup></sup></span>
+                        <br><p id="sunny">Sunny</p><br>
+                    </div>
+
+                    <div class="line-5">
+                        <img src="/WeatherUI/wind.png" alt="wind-speed" class="weathers">
+                        <img src="/WeatherUI/humidity.png" alt="humidity" class="weathers">
+                        <img src="/WeatherUI/umbrella.png" alt="rainfall" class="weathers">
+                        <pre>16km/h     40%      10%</pre>   
+                    </div>
+
+                    <div class="line-6">
+                        <p id="line6text">Today<span id="line6righttext">Next 7 Days ></span></p>
+                    </div>
+
+                    <div class="line-7">
+                        <div class="line-7-items">
+                            <p id="time"><b>Now</b></p>
+                            <p>19<sup><sup>o</sup></sup></p>
+                        </div>
+                        <div class="line-7-items">
+                            <p id="time"><b>11:00</b></p>
+                            <p>18<sup><sup>o</sup></sup></p>
+                        </div>
+                        <div class="line-7-items">
+                            <p id="time"><b>12:00</b></p>
+                            <p>19<sup><sup>o</sup></sup></p>
+                        </div>
+                        <div class="line-7-items">
+                            <p id="time"><b>13:00</b></p>
+                            <p>21<sup><sup>o</sup></sup></p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
